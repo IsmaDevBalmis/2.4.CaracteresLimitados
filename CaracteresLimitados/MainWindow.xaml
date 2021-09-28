@@ -1,0 +1,23 @@
+﻿<Window x:Class="CaracteresLimitados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CaracteresLimitados"
+        mc:Ignorable="d"
+        Title="Caracteres limitados" Height="450" Width="800"
+        Icon="assets/office_word.ico">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFDCB9B9" Offset="1"/>
+                <GradientStop Color="#FFDA6161"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="mensajeUsuarioTextBox" HorizontalAlignment="Left" Height="316" Margin="49,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="696" TextChanged="mensajeUsuarioTextBox_TextChanged"/>
+        <TextBlock x:Name="contadorCaracteresTextBlock" HorizontalAlignment="Left"  Margin="602,368,0,0" TextWrapping="Wrap" FontSize="30px" Text="0" VerticalAlignment="Top" Height="35" Width="111" Foreground="#FF635C5C"/>
+        <TextBlock x:Name="maximoCaracteresTextBlock" HorizontalAlignment="Left"  Margin="666,368,0,0" TextWrapping="Wrap" FontSize="30px" Text="140" VerticalAlignment="Top" Height="35" Width="111" Foreground="#FF635C5C"/>
+        <TextBlock HorizontalAlignment="Left"  Margin="652,365,0,0" TextWrapping="Wrap" FontSize="30px" Text="/" VerticalAlignment="Top" Height="35" Width="111" Foreground="#FF635C5C"/>
+
+    </Grid>
+</Window>
