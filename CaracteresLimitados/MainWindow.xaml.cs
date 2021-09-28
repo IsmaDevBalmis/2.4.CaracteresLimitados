@@ -35,7 +35,9 @@ namespace CaracteresLimitados
 
             contadorCaracteresTextBlock.Text = caracteresGuardados.ToString();
 
-            if (contadorPalabras  == maximoCaracteres -1)
+            
+
+            if (contadorPalabras  >= maximoCaracteres -1)
             {
                 mensajeUsuarioTextBox.IsReadOnly = true;
             }
