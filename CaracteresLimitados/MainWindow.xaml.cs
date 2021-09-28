@@ -31,6 +31,7 @@ namespace CaracteresLimitados
             int maximoCaracteres = int.Parse(maximoCaracteresTextBlock.Text);
 
             int caracteresGuardados = mensajeUsuarioTextBox.Text.Length;
+            
 
             contadorCaracteresTextBlock.Text = caracteresGuardados.ToString();
 
